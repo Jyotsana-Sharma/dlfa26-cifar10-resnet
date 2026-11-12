@@ -15,3 +15,5 @@ __pycache__/
 *.egg-info/
 .venv/
 docs/reports/PROJECT_REPORT.md
+docs/reports/figures/fig3_public_progression.png
+

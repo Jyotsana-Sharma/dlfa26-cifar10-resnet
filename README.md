@@ -25,7 +25,7 @@ The model uses **SLA (Self-Supervised Label Augmentation)** — each image is ro
 ## Setup
 
 ```bash
-git clone https://github.com/Jyotsana-Sharma/dlfa26-cifar10-resnet.git
+git clone https://github.com/Jyotsana-Sharma/dlfa26-cifar10-resnet
 cd dlfa26-cifar10-resnet
 pip install -r requirements.txt
 ```
