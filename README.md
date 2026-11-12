@@ -125,12 +125,12 @@ requirements.txt    Python dependencies
 
 ## Results
 
-| Model | Holdout (45k) | Kaggle Public | Kaggle Private |
-|---|---|---|---|
-| AirResNet baseline | 95.58% | 85.0% | — |
-| + TrivialAugment, 120 ep | 96.20% | 86.0% | — |
-| PreActResNet, 200 ep | 96.82% | 88.4% | — |
-| **PreActResNet + SLA+SD, all 50k** | **97.56%** | **90.7%  | **87.4%  |
+| Model | Holdout (45k) | Kaggle Public |
+|---|---|---|
+| AirResNet baseline | 95.58% | 85.0% |
+| + TrivialAugment, 120 ep | 96.20% | 86.0% |
+| PreActResNet, 200 ep | 96.82% | 88.4% |
+| **PreActResNet + SLA+SD, all 50k** | **97.56%** | **90.7%** |
 
 ---
 
