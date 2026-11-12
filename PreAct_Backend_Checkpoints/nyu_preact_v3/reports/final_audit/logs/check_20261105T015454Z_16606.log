@@ -1,0 +1,56 @@
+test_development_resume_select_full_export_replay (test_flow.Flow.test_development_resume_select_full_export_replay) ... {"status": "training", "completed_epochs": 0, "total_epochs": 3, "parameters": 274, "remaining_seconds": 3599.99544220799}
+Epoch 1: validating raw
+Epoch 1: validating ema
+{"epoch": 1, "train_loss": 6.029860496520996, "train_accuracy": 0.25, "validation": {"raw": {"none/plain": 0.25, "none/aggregate": 0.25, "none/combined": 0.25}, "ema": {"none/plain": 0.25, "none/aggregate": 0.25, "none/combined": 0.25}}, "lr": 0.05, "skipped_updates": 0, "seconds": 0.01436312499572523, "estimated_training_hours_remaining": 7.979513886514016e-06}
+Epoch 2: validating raw
+Epoch 2: validating ema
+{"epoch": 2, "train_loss": 6.005210876464844, "train_accuracy": 0.25, "validation": {"raw": {"none/plain": 0.25, "none/aggregate": 0.25, "none/combined": 0.25}, "ema": {"none/plain": 0.25, "none/aggregate": 0.25, "none/combined": 0.25}}, "lr": 0.1, "skipped_updates": 0, "seconds": 0.0026973339990945533, "estimated_training_hours_remaining": 7.492594441929315e-07}
+Epoch 3: validating raw
+Epoch 3: validating ema
+{"epoch": 3, "train_loss": 5.938696384429932, "train_accuracy": 0.25, "validation": {"raw": {"none/plain": 0.25, "none/aggregate": 0.25, "none/combined": 0.25}, "ema": {"none/plain": 0.25, "none/aggregate": 0.25, "none/combined": 0.0}}, "lr": 0.1, "skipped_updates": 0, "seconds": 0.0024787079892121255, "estimated_training_hours_remaining": 0.0}
+TRAINING COMPLETE: 3/3 epochs saved.
+{"status": "training", "completed_epochs": 3, "total_epochs": 3, "parameters": 274, "remaining_seconds": 3599.9999693749996}
+TRAINING COMPLETE: 3/3 epochs saved.
+Calibrating EMA BN using training images only
+Evaluating ema_combined_e001_c757e46f.pt
+Calibrating EMA BN using training images only
+Evaluating ema_plain_e001_52f06f51.pt
+Evaluating raw_combined_e001_a468e981.pt
+Evaluating raw_plain_e001_2849530f.pt
+{
+  "checkpoint": "/private/var/folders/j9/x94qn3k5743cyysn7k272ysr0000gn/T/tmp1fueo8nb/development/raw_combined_e001_a468e981.pt",
+  "checkpoint_sha256": "8517f7491f377c97a389fda5d812289668649d108800c97849bb60581d67be1d",
+  "model_kind": "raw",
+  "epoch": 1,
+  "tta": "none",
+  "head": "combined",
+  "accuracy": 0.25
+}
+Full50K scratch config written. Frozen policy: /var/folders/j9/x94qn3k5743cyysn7k272ysr0000gn/T/tmp1fueo8nb/selection.json
+{"status": "training", "completed_epochs": 0, "total_epochs": 3, "parameters": 274, "remaining_seconds": 3599.9972140409955}
+{"epoch": 1, "train_loss": 6.029860496520996, "train_accuracy": 0.25, "validation": {}, "lr": 7.987220447284345e-05, "skipped_updates": 0, "seconds": 0.0014680830063298345, "estimated_training_hours_remaining": 8.156016701832414e-07}
+{"epoch": 2, "train_loss": 6.029820442199707, "train_accuracy": 0.25, "validation": {}, "lr": 0.0001597444089456869, "skipped_updates": 0, "seconds": 0.001454709010431543, "estimated_training_hours_remaining": 4.040858362309842e-07}
+{"epoch": 3, "train_loss": 6.029707431793213, "train_accuracy": 0.25, "validation": {}, "lr": 0.00023961661341853038, "skipped_updates": 0, "seconds": 0.001448000009986572, "estimated_training_hours_remaining": 0.0}
+TRAINING COMPLETE: 3/3 epochs saved.
+Predicted 64/2000; estimated remaining 0s
+Predicted 2000/2000; estimated remaining 0s
+DOWNLOAD THIS FILE: /private/var/folders/j9/x94qn3k5743cyysn7k272ysr0000gn/T/tmp1fueo8nb/export/submission.csv
+Predicted 64/2000; estimated remaining 0s
+Predicted 2000/2000; estimated remaining 0s
+DOWNLOAD THIS FILE: /private/var/folders/j9/x94qn3k5743cyysn7k272ysr0000gn/T/tmp1fueo8nb/replay/submission.csv
+ok
+test_completion_resume_and_incomplete_stop (test_overnight.OvernightChecks.test_completion_resume_and_incomplete_stop) ... ok
+test_audit_gate_rejects_changed_source_before_training (test_pipeline.Checks.test_audit_gate_rejects_changed_source_before_training) ... ok
+test_checkpoint_resume_next_random_update (test_pipeline.Checks.test_checkpoint_resume_next_random_update) ... ok
+test_csv_exact_schema_and_no_overwrite (test_pipeline.Checks.test_csv_exact_schema_and_no_overwrite) ... ok
+test_ema_and_bn_calibration_preserve_weights (test_pipeline.Checks.test_ema_and_bn_calibration_preserve_weights) ... ok
+test_original_inference_and_batch_independence (test_pipeline.Checks.test_original_inference_and_batch_independence) ... ok
+test_parameter_count_and_original_loss_gradients (test_pipeline.Checks.test_parameter_count_and_original_loss_gradients) ... ok
+test_schedule_and_budget (test_pipeline.Checks.test_schedule_and_budget) ... ok
+test_split_reproducibility_and_normalization (test_pipeline.Checks.test_split_reproducibility_and_normalization) ... ok
+test_zip_alignment_missing_duplicate_reordered (test_pipeline.Checks.test_zip_alignment_missing_duplicate_reordered) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 9.994s
+
+OK

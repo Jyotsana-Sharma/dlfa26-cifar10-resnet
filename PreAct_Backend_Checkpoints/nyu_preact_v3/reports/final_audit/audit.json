@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "sources": {
+    "core.py": "706469520af1e9e8494a9ec0cd7c9944944d6e624e0ce6dbe9ba2943b1976b13",
+    "dataset.py": "60facfa8e20a40ab11a309909f156d42f30c661a531e54de4ad4a73bdde9698a",
+    "models.py": "e03b2687dbdae6fff70362ae7f8c22616f43ff237a6faac28c819d67bc84442d",
+    "run.py": "7c9122978fd82beda6da9cf7abf37a248059f98f69f3e1b82108bf1520361bf4"
+  },
+  "recipe": {
+    "epochs": 320,
+    "batch_size": 128,
+    "lr": 0.1,
+    "min_lr": 5e-05,
+    "warmup_epochs": 5,
+    "momentum": 0.9,
+    "nesterov": true,
+    "weight_decay": 0.0005,
+    "label_smoothing": 0.1,
+    "ema_decay": 0.999,
+    "seed": 42,
+    "augmentation": "trivial",
+    "cutout": 12,
+    "precision": "fp16",
+    "workers": 4,
+    "calibration_images": 10000
+  },
+  "fingerprint": "f1e4e20729eca86cb52d21f81449d7bb21945aea820668ab32d20caec31556da",
+  "train_count": 45000,
+  "validation_count": 5000,
+  "index_overlap": 0,
+  "pixel_duplicates": 0,
+  "train_test_pixel_overlap": 0,
+  "parameters": 4706674,
+  "cpu_smoke_loss": 5.8785400390625,
+  "test_count": 2000,
+  "normalization": {
+    "mean": [
+      0.4914,
+      0.4822,
+      0.4465
+    ],
+    "std": [
+      0.247,
+      0.2435,
+      0.2616
+    ]
+  },
+  "test_signature": {
+    "images": "c423f72c78278da5746282dbf0ed43622f65f0c820f3fa9b841abfb0d16b78d0",
+    "metadata": "d0db3026e3a7bc397d6f59b7ff6825960cc32a5e2aef57df63c9140b2ad31e5d",
+    "sample": "83aa7ddd58d46026c3b3f870f507c33b178ebfbdf24e0a69d9f7a9d6d8cfff59"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "torch": "2.15.0",
+    "torchvision": "0.29.2",
+    "numpy": "2.5.4",
+    "pillow": "13.0.0",
+    "cuda": null,
+    "gpu": null
+  },
+  "scope": "Current independent PreAct pipeline/data only. Does not explain historical Wide98 score gap; no old submission replay required."
+}

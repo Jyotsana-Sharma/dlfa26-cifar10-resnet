@@ -1,0 +1,10 @@
+{
+  "v3_package": "nyu_preact_v3",
+  "v3_source_sha256": {
+    "models.py": "e03b2687dbdae6fff70362ae7f8c22616f43ff237a6faac28c819d67bc84442d",
+    "core.py": "706469520af1e9e8494a9ec0cd7c9944944d6e624e0ce6dbe9ba2943b1976b13",
+    "dataset.py": "60facfa8e20a40ab11a309909f156d42f30c661a531e54de4ad4a73bdde9698a",
+    "run.py": "7c9122978fd82beda6da9cf7abf37a248059f98f69f3e1b82108bf1520361bf4"
+  },
+  "notes": "V4 reuses V3 PreActResNet architecture and SLA+SD loss verbatim. Config changes from V3: epochs 200 (was 320), seed 0 (was 42), min_lr 0.0 (was 5e-5), workers 2 (was 4). batch 128/lr 0.1 is a memory-safe scale-down for L4/A100 from the historic batch 512/lr 0.4 run."
+}

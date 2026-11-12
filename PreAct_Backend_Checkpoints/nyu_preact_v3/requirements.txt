@@ -1,0 +1,6 @@
+# Use the working NYU CUDA environment. Do not upgrade it during an experiment.
+# PyTorch and torchvision must be a compatible pair (e.g. 2.8.x / 0.23.x).
+torch>=2.8,<3
+torchvision>=0.23,<1
+numpy>=1.26,<3
+Pillow>=10,<14

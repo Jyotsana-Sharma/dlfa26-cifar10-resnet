@@ -1,0 +1,20 @@
+{
+  "name": "preact_sla_ta320_v3",
+  "epochs": 320,
+  "batch_size": 128,
+  "lr": 0.1,
+  "min_lr": 5e-05,
+  "warmup_epochs": 5,
+  "momentum": 0.9,
+  "nesterov": true,
+  "weight_decay": 0.0005,
+  "label_smoothing": 0.1,
+  "ema_decay": 0.999,
+  "seed": 42,
+  "validation_size": 5000,
+  "augmentation": "trivial",
+  "cutout": 12,
+  "precision": "fp16",
+  "workers": 4,
+  "calibration_images": 10000
+}

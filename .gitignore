@@ -1,0 +1,17 @@
+backend/
+experiments/
+data/
+models/
+output/
+working/
+__pycache__/
+*.pyc
+*.pyo
+*.pt
+*.pth
+*.tmp
+*.lock
+.DS_Store
+*.egg-info/
+.venv/
+docs/reports/PROJECT_REPORT.md

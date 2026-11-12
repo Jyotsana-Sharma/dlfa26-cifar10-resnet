@@ -1,0 +1,125 @@
+test_development_resume_select_full_export_replay (test_flow.Flow.test_development_resume_select_full_export_replay) ... {"status": "training", "completed_epochs": 0, "total_epochs": 3, "parameters": 274, "remaining_seconds": 3599.99544220799}
+Epoch 1: validating raw
+Epoch 1: validating ema
+{"epoch": 1, "train_loss": 6.029860496520996, "train_accuracy": 0.25, "validation": {"raw": {"none/plain": 0.25, "none/aggregate": 0.25, "none/combined": 0.25}, "ema": {"none/plain": 0.25, "none/aggregate": 0.25, "none/combined": 0.25}}, "lr": 0.05, "skipped_updates": 0, "seconds": 0.01436312499572523, "estimated_training_hours_remaining": 7.979513886514016e-06}
+Epoch 2: validating raw
+Epoch 2: validating ema
+{"epoch": 2, "train_loss": 6.005210876464844, "train_accuracy": 0.25, "validation": {"raw": {"none/plain": 0.25, "none/aggregate": 0.25, "none/combined": 0.25}, "ema": {"none/plain": 0.25, "none/aggregate": 0.25, "none/combined": 0.25}}, "lr": 0.1, "skipped_updates": 0, "seconds": 0.0026973339990945533, "estimated_training_hours_remaining": 7.492594441929315e-07}
+Epoch 3: validating raw
+Epoch 3: validating ema
+{"epoch": 3, "train_loss": 5.938696384429932, "train_accuracy": 0.25, "validation": {"raw": {"none/plain": 0.25, "none/aggregate": 0.25, "none/combined": 0.25}, "ema": {"none/plain": 0.25, "none/aggregate": 0.25, "none/combined": 0.0}}, "lr": 0.1, "skipped_updates": 0, "seconds": 0.0024787079892121255, "estimated_training_hours_remaining": 0.0}
+TRAINING COMPLETE: 3/3 epochs saved.
+{"status": "training", "completed_epochs": 3, "total_epochs": 3, "parameters": 274, "remaining_seconds": 3599.9999693749996}
+TRAINING COMPLETE: 3/3 epochs saved.
+Calibrating EMA BN using training images only
+Evaluating ema_combined_e001_c757e46f.pt
+Calibrating EMA BN using training images only
+Evaluating ema_plain_e001_52f06f51.pt
+Evaluating raw_combined_e001_a468e981.pt
+Evaluating raw_plain_e001_2849530f.pt
+{
+  "checkpoint": "/private/var/folders/j9/x94qn3k5743cyysn7k272ysr0000gn/T/tmp1fueo8nb/development/raw_combined_e001_a468e981.pt",
+  "checkpoint_sha256": "8517f7491f377c97a389fda5d812289668649d108800c97849bb60581d67be1d",
+  "model_kind": "raw",
+  "epoch": 1,
+  "tta": "none",
+  "head": "combined",
+  "accuracy": 0.25
+}
+Full50K scratch config written. Frozen policy: /var/folders/j9/x94qn3k5743cyysn7k272ysr0000gn/T/tmp1fueo8nb/selection.json
+{"status": "training", "completed_epochs": 0, "total_epochs": 3, "parameters": 274, "remaining_seconds": 3599.9972140409955}
+{"epoch": 1, "train_loss": 6.029860496520996, "train_accuracy": 0.25, "validation": {}, "lr": 7.987220447284345e-05, "skipped_updates": 0, "seconds": 0.0014680830063298345, "estimated_training_hours_remaining": 8.156016701832414e-07}
+{"epoch": 2, "train_loss": 6.029820442199707, "train_accuracy": 0.25, "validation": {}, "lr": 0.0001597444089456869, "skipped_updates": 0, "seconds": 0.001454709010431543, "estimated_training_hours_remaining": 4.040858362309842e-07}
+{"epoch": 3, "train_loss": 6.029707431793213, "train_accuracy": 0.25, "validation": {}, "lr": 0.00023961661341853038, "skipped_updates": 0, "seconds": 0.001448000009986572, "estimated_training_hours_remaining": 0.0}
+TRAINING COMPLETE: 3/3 epochs saved.
+Predicted 64/2000; estimated remaining 0s
+Predicted 2000/2000; estimated remaining 0s
+DOWNLOAD THIS FILE: /private/var/folders/j9/x94qn3k5743cyysn7k272ysr0000gn/T/tmp1fueo8nb/export/submission.csv
+Predicted 64/2000; estimated remaining 0s
+Predicted 2000/2000; estimated remaining 0s
+DOWNLOAD THIS FILE: /private/var/folders/j9/x94qn3k5743cyysn7k272ysr0000gn/T/tmp1fueo8nb/replay/submission.csv
+ok
+test_completion_resume_and_incomplete_stop (test_overnight.OvernightChecks.test_completion_resume_and_incomplete_stop) ... ok
+test_audit_gate_rejects_changed_source_before_training (test_pipeline.Checks.test_audit_gate_rejects_changed_source_before_training) ... ok
+test_checkpoint_resume_next_random_update (test_pipeline.Checks.test_checkpoint_resume_next_random_update) ... ok
+test_csv_exact_schema_and_no_overwrite (test_pipeline.Checks.test_csv_exact_schema_and_no_overwrite) ... ok
+test_ema_and_bn_calibration_preserve_weights (test_pipeline.Checks.test_ema_and_bn_calibration_preserve_weights) ... ok
+test_original_inference_and_batch_independence (test_pipeline.Checks.test_original_inference_and_batch_independence) ... ok
+test_parameter_count_and_original_loss_gradients (test_pipeline.Checks.test_parameter_count_and_original_loss_gradients) ... ok
+test_schedule_and_budget (test_pipeline.Checks.test_schedule_and_budget) ... ok
+test_split_reproducibility_and_normalization (test_pipeline.Checks.test_split_reproducibility_and_normalization) ... ok
+test_zip_alignment_missing_duplicate_reordered (test_pipeline.Checks.test_zip_alignment_missing_duplicate_reordered) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 9.994s
+
+OK
+Running: /Users/Carli/Documents/ChatGPT/deep\ learning\ kaggle/.venv/bin/python -u /Users/Carli/Documents/ChatGPT/deep\ learning\ kaggle/nyu_preact_v3/run.py audit --config /Users/Carli/Documents/ChatGPT/deep\ learning\ kaggle/nyu_preact_v3/configs/development.json --images /Users/Carli/Documents/ChatGPT/deep\ learning\ kaggle/data/train_images --labels /Users/Carli/Documents/ChatGPT/deep\ learning\ kaggle/data/train_labels.csv --test-images /Users/Carli/Documents/ChatGPT/deep\ learning\ kaggle/data/test_images --test-metadata /Users/Carli/Documents/ChatGPT/deep\ learning\ kaggle/data/test.csv --sample /Users/Carli/Documents/ChatGPT/deep\ learning\ kaggle/data/sample_submission.csv --output /Users/Carli/Documents/ChatGPT/deep\ learning\ kaggle/nyu_preact_v3/reports/final_audit/audit.json
+Audit images 10000/50000
+Audit images 20000/50000
+Audit images 30000/50000
+Audit images 40000/50000
+Audit images 50000/50000
+{
+  "status": "passed",
+  "sources": {
+    "core.py": "706469520af1e9e8494a9ec0cd7c9944944d6e624e0ce6dbe9ba2943b1976b13",
+    "dataset.py": "60facfa8e20a40ab11a309909f156d42f30c661a531e54de4ad4a73bdde9698a",
+    "models.py": "e03b2687dbdae6fff70362ae7f8c22616f43ff237a6faac28c819d67bc84442d",
+    "run.py": "7c9122978fd82beda6da9cf7abf37a248059f98f69f3e1b82108bf1520361bf4"
+  },
+  "recipe": {
+    "epochs": 320,
+    "batch_size": 128,
+    "lr": 0.1,
+    "min_lr": 5e-05,
+    "warmup_epochs": 5,
+    "momentum": 0.9,
+    "nesterov": true,
+    "weight_decay": 0.0005,
+    "label_smoothing": 0.1,
+    "ema_decay": 0.999,
+    "seed": 42,
+    "augmentation": "trivial",
+    "cutout": 12,
+    "precision": "fp16",
+    "workers": 4,
+    "calibration_images": 10000
+  },
+  "fingerprint": "f1e4e20729eca86cb52d21f81449d7bb21945aea820668ab32d20caec31556da",
+  "train_count": 45000,
+  "validation_count": 5000,
+  "index_overlap": 0,
+  "pixel_duplicates": 0,
+  "train_test_pixel_overlap": 0,
+  "parameters": 4706674,
+  "cpu_smoke_loss": 5.8785400390625,
+  "test_count": 2000,
+  "normalization": {
+    "mean": [
+      0.4914,
+      0.4822,
+      0.4465
+    ],
+    "std": [
+      0.247,
+      0.2435,
+      0.2616
+    ]
+  },
+  "test_signature": {
+    "images": "c423f72c78278da5746282dbf0ed43622f65f0c820f3fa9b841abfb0d16b78d0",
+    "metadata": "d0db3026e3a7bc397d6f59b7ff6825960cc32a5e2aef57df63c9140b2ad31e5d",
+    "sample": "83aa7ddd58d46026c3b3f870f507c33b178ebfbdf24e0a69d9f7a9d6d8cfff59"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "torch": "2.15.0",
+    "torchvision": "0.29.2",
+    "numpy": "2.5.4",
+    "pillow": "13.0.0",
+    "cuda": null,
+    "gpu": null
+  },
+  "scope": "Current independent PreAct pipeline/data only. Does not explain historical Wide98 score gap; no old submission replay required."
+}
