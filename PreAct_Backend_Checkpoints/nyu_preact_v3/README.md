@@ -218,7 +218,6 @@ Dependencies: Python 3.10+, PyTorch 2.8+ with a compatible torchvision, numpy, P
 
 ## References and attribution
 
-- Primary project source: user's `DL_Project1_PreAct_SLA.ipynb`, and the supplied `dl_project1-20261104T180313Z-1-001.zip` baseline/configuration. No trained weights are included or used for initialization.
 - He et al., [Identity Mappings in Deep Residual Networks](https://arxiv.org/abs/1603.05027), 2016: pre-activation residual blocks.
 - Lee, Hwang and Shin, [Self-supervised Label Augmentation via Input Transformations](https://proceedings.mlr.press/v119/lee20c.html), ICML 2020; [authors' implementation](https://github.com/hankook/SLA): joint class/rotation objective, aggregation and self-distillation.
 - Müller and Hutter, [TrivialAugment](https://arxiv.org/abs/2103.10158), ICCV 2021; implemented with torchvision TrivialAugmentWide.

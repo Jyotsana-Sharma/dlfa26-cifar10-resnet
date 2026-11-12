@@ -1,0 +1,20 @@
+{
+  "name": "preact_baseline_recovery_v4_full50k",
+  "epochs": 200,
+  "batch_size": 128,
+  "lr": 0.1,
+  "min_lr": 0.0,
+  "warmup_epochs": 5,
+  "momentum": 0.9,
+  "nesterov": true,
+  "weight_decay": 0.0005,
+  "label_smoothing": 0.1,
+  "ema_decay": 0.999,
+  "seed": 0,
+  "validation_size": 0,
+  "augmentation": "trivial",
+  "cutout": 12,
+  "precision": "fp16",
+  "workers": 2,
+  "calibration_images": 10000
+}
