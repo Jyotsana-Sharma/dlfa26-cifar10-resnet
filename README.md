@@ -2,7 +2,7 @@
 
 A Pre-Activation ResNet trained with SLA+SD loss on CIFAR-10, under a 5 million parameter constraint.
 
-**90.7% public leaderboard accuracy (rank 23rd) · 87.4% private accuracy (rank 29th)**
+
 
 ---
 
@@ -130,7 +130,7 @@ requirements.txt    Python dependencies
 | AirResNet baseline | 95.58% | 85.0% | — |
 | + TrivialAugment, 120 ep | 96.20% | 86.0% | — |
 | PreActResNet, 200 ep | 96.82% | 88.4% | — |
-| **PreActResNet + SLA+SD, all 50k** | **97.56%** | **90.7% (rank 23)** | **87.4% (rank 29)** |
+| **PreActResNet + SLA+SD, all 50k** | **97.56%** | **90.7%  | **87.4%  |
 
 ---
 
